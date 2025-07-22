@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bgRed: oklch(0.577 0.245 27.325);
+  --color-title: oklch(0.37 0.013 285.805);
+  --color-paragraph: rgb(19, 19, 19);
+}
+
+@layer components {
+  .title {
+    font-weight: bold;
+    color: var(--color-title);
+    font-size: 3rem;
+    line-height: normal;
+  }
+
+  .paragraph {
+    color: var(--color-title);
+    font-size: 18px;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #efefef;
+  overflow-x: hidden;
+  font-family: "Noto Sans"sans-serif;
+}
