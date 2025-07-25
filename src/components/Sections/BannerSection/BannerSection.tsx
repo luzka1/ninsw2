@@ -10,7 +10,7 @@ export default function BannerSection() {
       <motion.div
         initial={{ height: "100%" }}
         animate={{ height: "0%" }}
-        transition={{ type: "", duration: 4, ease: [0.2, 1, 0.31, 0.99] }}
+        transition={{ duration: 4, ease: [0.2, 1, 0.31, 0.99] }}
         className="absolute bottom-0 left-0 w-full bg-[#efefef]"
       />
 

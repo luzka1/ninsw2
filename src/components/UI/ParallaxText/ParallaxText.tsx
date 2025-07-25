@@ -34,6 +34,7 @@ export function ParallaxText({ text, baseVelocity }: ParallaxProps) {
   const x = useTransform(baseX, (v) => `${wrap(-35, -45, v)}%`);
 
   useAnimationFrame((t, delta) => {
+    t = t / 1000;
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
     if (velocityFactor.get() < 0) {

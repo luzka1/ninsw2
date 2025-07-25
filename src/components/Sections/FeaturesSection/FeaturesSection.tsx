@@ -3,6 +3,7 @@ import { Reveal } from "../../UI/Reveal";
 
 import nsw2 from "/assets/ninsw2-pic-2.png";
 import mkworld from "/assets/mkworld.mp4";
+import { FullscreenPhoto } from "@/components/UI/FullscreenPhoto";
 
 const photos: { url: string; alt: string }[] = [
   {
@@ -24,6 +25,7 @@ const photos: { url: string; alt: string }[] = [
 ];
 
 export default function FeaturesSection() {
+
   return (
     <section className="w-full bg-radial flex flex-col from-slate-950 from-40% to-zinc-950 gap-72 py-24">
       <div className="flex flex-col justify-center items-center gap-14">
@@ -77,7 +79,7 @@ export default function FeaturesSection() {
         <motion.div
           className="w-2/3 h-[600px] relative grid grid-rows-2 grid-cols-[1fr_2fr] gap-4"
           initial={{ x: "100%", opacity: 0 }}
-          whileInView={{ x: "0%", opacity: 1 }}
+          animate={{ x: "0%", opacity: 1 }}
           transition={{
             type: "spring",
             ease: "easeOut",
@@ -87,11 +89,7 @@ export default function FeaturesSection() {
         >
           {photos.map((photo, index) => (
             <div key={index}>
-              <img
-                src={photo.url}
-                className="w-full h-full rounded-4xl object-cover"
-                alt={photo.alt}
-              />
+              <FullscreenPhoto image={photo.url} alt={photo.alt} />
             </div>
           ))}
         </motion.div>
