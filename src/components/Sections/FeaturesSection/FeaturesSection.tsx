@@ -25,7 +25,6 @@ const photos: { url: string; alt: string }[] = [
 ];
 
 export default function FeaturesSection() {
-
   return (
     <section className="w-full bg-radial flex flex-col from-slate-950 from-40% to-zinc-950 gap-72 py-24">
       <div className="flex flex-col justify-center items-center gap-14">
@@ -46,15 +45,17 @@ export default function FeaturesSection() {
             delay: 0.2,
           }}
         >
-          <img src={nsw2} alt="imagem estatica do nintendo switch 2" />
-          <video
-            className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
-            src={mkworld}
-            autoPlay
-            loop
-            width="60%"
-            height="auto"
-          />
+          <div className="w-fit">
+            <img src={nsw2} alt="imagem estatica do nintendo switch 2" />
+            <video
+              className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+              src={mkworld}
+              autoPlay
+              loop
+              width="60%"
+              height="auto"
+            />
+          </div>
         </motion.div>
 
         <div className="w-2/3">
