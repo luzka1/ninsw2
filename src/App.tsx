@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header/Header";
 import EvolutionSection from "@/components/Sections/EvolutionSection/EvolutionSection";
 import FeaturesSection from "@/components/Sections/FeaturesSection/FeaturesSection";
@@ -8,12 +7,14 @@ function App() {
   return (
     <div className="flex flex-col relative">
       <Header />
-      
+
       <BannerSection />
 
       <EvolutionSection />
 
       <FeaturesSection />
+
+      <EvolutionSection />
     </div>
   );
 }

@@ -26,7 +26,7 @@ const photos: { url: string; alt: string }[] = [
 
 export default function FeaturesSection() {
   return (
-    <section className="w-full bg-radial flex flex-col from-slate-950 from-40% to-zinc-950 gap-72 py-24">
+    <section className="w-full bg-radial flex flex-col from-slate-950 from-40% to-zinc-950 gap-64 py-24">
       <div className="flex flex-col justify-center items-center gap-14">
         <div>
           <Reveal color="none">
@@ -35,7 +35,7 @@ export default function FeaturesSection() {
         </div>
 
         <motion.div
-          className="w-2/3  h-fit relative"
+          className="w-2/3 h-fit h-dvh"
           initial={{ x: "100%", opacity: 0 }}
           whileInView={{ x: "0%", opacity: 1 }}
           transition={{
@@ -45,13 +45,18 @@ export default function FeaturesSection() {
             delay: 0.2,
           }}
         >
-          <div className="w-fit">
-            <img src={nsw2} alt="imagem estatica do nintendo switch 2" />
-            <video
+          <div className="relative w-full h-[500px]">
+            <img
+              src={nsw2}
               className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+              alt="imagem estatica do nintendo switch 2"
+            />
+            <video
+              className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[716px]"
               src={mkworld}
-              autoPlay
-              loop
+              autoPlay={true}
+              loop={true}
+              controls={true}
               width="60%"
               height="auto"
             />
@@ -70,7 +75,7 @@ export default function FeaturesSection() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-14">
+      <div className="flex flex-col justify-center items-center h-dvh gap-14">
         <div>
           <Reveal color="none">
             <h1 className="title text-white">E com amigos é sempre melhor!</h1>
