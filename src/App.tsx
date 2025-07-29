@@ -2,6 +2,7 @@ import Header from "@/components/Header/Header";
 import EvolutionSection from "@/components/Sections/EvolutionSection/EvolutionSection";
 import FeaturesSection from "@/components/Sections/FeaturesSection/FeaturesSection";
 import BannerSection from "./components/Sections/BannerSection/BannerSection";
+import GameChatSection from "@/components/Sections/GameChatSection/GameChatSection";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
 
       <FeaturesSection />
 
-      <EvolutionSection />
+      <GameChatSection />
     </div>
   );
 }

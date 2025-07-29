@@ -35,7 +35,7 @@ export default function FeaturesSection() {
         </div>
 
         <motion.div
-          className="w-2/3 h-fit h-dvh"
+          className="w-2/3 h-fit"
           initial={{ x: "100%", opacity: 0 }}
           whileInView={{ x: "0%", opacity: 1 }}
           transition={{
