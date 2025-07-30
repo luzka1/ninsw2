@@ -8,7 +8,7 @@ interface RevealProps {
 }
 
 export const Reveal = ({ children, color }: RevealProps) => {
-  const [bgColor, setBgColor] = useState<"red" | "white" | "none">("red");
+  const [bgColor, setBgColor] = useState<"red" | "white" | "none">("none");
 
   useEffect(() => {
     switch (color) {
