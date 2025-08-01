@@ -5,13 +5,18 @@ import chat from "/assets/gamechat.avif";
 
 export default function GameChatSection() {
   return (
-    <section className="py-12 h-dvh flex">
+    <section className="py-24 h-dvh flex">
       <div className="w-1/2 h-full">
         <div className="h-full w-full flex justify-center items-center">
           <motion.img
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 100 }}
-            transition={{ delay: 0.5 }}
+            initial={{ opacity: 0, x: -500 }}
+            whileInView={{ opacity: 100, x: 0 }}
+            transition={{
+              type: "spring",
+              ease: "easeOut",
+              duration: 2,
+              delay: 0.2,
+            }}
             className="h-full"
             src={camera}
             alt="Nova câmera do nintendo switch 2 (peça vendida separadamente)"
@@ -20,21 +25,21 @@ export default function GameChatSection() {
       </div>
 
       <div className="w-1/2 h-full md:pr-16 lg:pr-32">
-        <div className="h-full w-full">
-          <div>
-            <Reveal color="none">
-              <h1 className="title">Conheça o GameChat!</h1>
-            </Reveal>
-
-            <Reveal color="none">
-              <p className="subtitle">
-                Agora você pode conversar por voz, compartilhar sua tela e se
-                conectar por vídeo enquanto joga.
-              </p>
-            </Reveal>
-          </div>
-
+        <div className="h-full w-full flex flex-col gap-12">
           <div className="">
+            <div>
+              <Reveal color="none">
+                <h1 className="title">Conheça o GameChat!</h1>
+              </Reveal>
+
+              <Reveal color="none">
+                <p className="subtitle">
+                  Agora você pode conversar por voz, compartilhar sua tela e se
+                  conectar por vídeo enquanto joga.
+                </p>
+              </Reveal>
+            </div>
+
             <Reveal color="none">
               <p className="paragraph">
                 Seus amigos e familiares nunca estão longe com o GameChat. Basta
@@ -63,13 +68,20 @@ export default function GameChatSection() {
               </p>
             </Reveal>
           </div>
-        </div>
 
-        <div className="flex justify-center items-center">
-          <div>
-            <img
+          <div className="">
+            <motion.img
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 100, x: 0 }}
+              transition={{
+                type: "spring",
+                ease: "easeOut",
+                duration: 2,
+                delay: 0.2,
+              }}
               src={chat}
-              alt="Televisão com novo GameChat do nintendo switch 2 com 4 players jogando" 
+              className="rounded-3xl w-[80%] shadow-xl"
+              alt="Televisão com novo GameChat do nintendo switch 2 com 4 players jogando"
             />
           </div>
         </div>

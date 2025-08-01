@@ -19,13 +19,19 @@
     color: var(--color-title);
     font-size: 18px;
   }
-  
+
   .subtitle {
     color: var(--color-title);
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
   }
+}
+
+:root {
+  --hue-1: #a14444;
+  --hue-2: #0ab660b7;
+  --hue-3: #b60a91b7;
 }
 
 body {
