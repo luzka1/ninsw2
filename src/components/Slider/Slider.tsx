@@ -5,11 +5,11 @@ import SemiPortable from "./SliderComponents/SemiPortable";
 import Tv from "./SliderComponents/Tv";
 
 export default function Slider() {
-  const itemsTest = [
-    { component: <></> },
+  const itemsTest: { component: React.ReactNode }[] = [
     { component: <SemiPortable /> },
     { component: <Tv /> },
     { component: <Portable /> },
+    { component: <SemiPortable /> },
   ];
 
   const [selectedItem, setSelectedItem] = useState(itemsTest.length);
@@ -24,10 +24,9 @@ export default function Slider() {
   const color = `var(--hue-${selectedItem})`;
 
   return (
-    <div className="relative flex items-center justify-center gap-12">
+    <div className="relative flex items-center justify-center gap-12 h-full">
       <motion.button
         initial={false}
-        animate={{ backgroundColor: color }}
         aria-label="Previous"
         style={button}
         onClick={() => setSlide(-1)}
@@ -40,17 +39,16 @@ export default function Slider() {
       <AnimatePresence custom={direction} initial={false} mode="popLayout">
         <Slide
           key={selectedItem}
-          component={itemsTest[selectedItem].component}
+          component={itemsTest[selectedItem - 1].component}
         />
       </AnimatePresence>
 
       <motion.button
         initial={false}
-        animate={{ backgroundColor: color }}
         aria-label="Next"
         style={button}
         onClick={() => setSlide(1)}
-        whileFocus={{ outline: `2px solid ${color}` }}
+        whileFocus={{ outline: `2px solid` }}
         whileTap={{ scale: 0.9 }}
       >
         &#x276F;
@@ -79,6 +77,7 @@ const Slide = forwardRef(function Slide(
         },
       }}
       exit={{ opacity: 0, x: direction * -50 }}
+      className="w-fit h-full flex items-center justify-center py-12"
     >
       {component}
     </motion.div>
@@ -86,7 +85,6 @@ const Slide = forwardRef(function Slide(
 });
 
 const button: React.CSSProperties = {
-  backgroundColor: "#0cdcf7",
   width: 40,
   height: 40,
   borderRadius: "50%",

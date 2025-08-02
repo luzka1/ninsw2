@@ -26,7 +26,7 @@ export default function GameChatSection() {
 
       <div className="w-1/2 h-full md:pr-16 lg:pr-32">
         <div className="h-full w-full flex flex-col gap-12">
-          <div className="">
+          <div className="flex flex-col gap-2">
             <div>
               <Reveal color="none">
                 <h1 className="title">Conheça o GameChat!</h1>

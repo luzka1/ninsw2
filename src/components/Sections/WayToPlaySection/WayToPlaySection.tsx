@@ -8,7 +8,7 @@ export default function WayToPlaySection() {
         <div className="">
           <h1 className="title">Escolha seu modo de jogar</h1>
 
-          <p className="subtitle">
+          <p className="paragraph">
             Assim como os consoles Nintendo Switch anteriores, você pode
             aproveitar seus jogos a qualquer hora e em qualquer lugar no modo
             TV, no modo semiportátil ou no modo portátil.
