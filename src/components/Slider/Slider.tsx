@@ -1,6 +1,6 @@
 import { AnimatePresence, motion, usePresenceData, wrap } from "motion/react";
 import { forwardRef, useState } from "react";
-import Portable from "./SliderComponents/Portable";
+import Portable from "./SliderComponents/WaysToPlayComponent";
 import SemiPortable from "./SliderComponents/SemiPortable";
 import Tv from "./SliderComponents/Tv";
 

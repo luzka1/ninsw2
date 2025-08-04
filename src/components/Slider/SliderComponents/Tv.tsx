@@ -1,7 +1,7 @@
 import pic from "/assets/ninsw2-pic-3.avif";
 
 export default function Tv() {
-  return <div className="w-3xl h-full bg-white rounded-4xl shadow-2xl flex flex-col gap-12 px-12 py-4">
+  return <div className="w-lg  h-full bg-white rounded-4xl shadow-2xl flex flex-col gap-12 px-12 py-4">
     <div className="w-full h-1/2">
       <img src={pic} alt="Nintendo Switch 2 Portable Mode" className="w-full h-full object-contain" />
     </div>
