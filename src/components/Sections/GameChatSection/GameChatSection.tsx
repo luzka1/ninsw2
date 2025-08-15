@@ -28,11 +28,11 @@ export default function GameChatSection() {
         <div className="h-full w-full flex flex-col gap-12">
           <div className="flex flex-col gap-2">
             <div>
-              <Reveal color="none">
+              <Reveal color="red">
                 <h1 className="title">Conheça o GameChat!</h1>
               </Reveal>
 
-              <Reveal color="none">
+              <Reveal color="red">
                 <p className="subtitle">
                   Agora você pode conversar por voz, compartilhar sua tela e se
                   conectar por vídeo enquanto joga.
@@ -40,7 +40,7 @@ export default function GameChatSection() {
               </Reveal>
             </div>
 
-            <Reveal color="none">
+            <Reveal color="red">
               <p className="paragraph">
                 Seus amigos e familiares nunca estão longe com o GameChat. Basta
                 apertar o botão C do Joy-Con 2 direito e iniciar um bate-papo
@@ -50,7 +50,7 @@ export default function GameChatSection() {
 
             <br />
 
-            <Reveal color="none">
+            <Reveal color="red">
               <p className="paragraph">
                 O console Nintendo Switch 2 tem um microfone embutido que pode
                 captar sua voz, mesmo que você esteja longe. Sua voz será
@@ -60,7 +60,7 @@ export default function GameChatSection() {
 
             <br />
 
-            <Reveal color="none">
+            <Reveal color="red">
               <p className="paragraph">
                 Compartilhe sua tela em tempo real, mesmo que estejam jogando
                 jogos diferentes. Forme uma equipe no mesmo jogo ou assista aos
