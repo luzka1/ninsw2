@@ -11,13 +11,14 @@ export default function GameChatSection() {
           <motion.img
             initial={{ opacity: 0, x: -500 }}
             whileInView={{ opacity: 100, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{
               type: "spring",
               ease: "easeOut",
               duration: 2,
               delay: 0.2,
             }}
-            className="h-full"
+            className="h-full object-contain"
             src={camera}
             alt="Nova câmera do nintendo switch 2 (peça vendida separadamente)"
           />
@@ -73,6 +74,7 @@ export default function GameChatSection() {
             <motion.img
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 100, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{
                 type: "spring",
                 ease: "easeOut",
@@ -81,7 +83,7 @@ export default function GameChatSection() {
               }}
               src={chat}
               className="rounded-3xl w-[80%] shadow-xl"
-              alt="Televisão com novo GameChat do nintendo switch 2 com 4 players jogando"
+              alt="Televisão com novo GameChat do nintendo switch 2 com 4 pessoas jogando"
             />
           </div>
         </div>

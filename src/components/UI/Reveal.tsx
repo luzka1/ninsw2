@@ -35,6 +35,7 @@ export const Reveal = ({ children, color }: RevealProps) => {
           opacity: 1,
           y: 0,
         }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5, delay: 0.25 }}
       >
         {children}
@@ -55,6 +56,7 @@ export const Reveal = ({ children, color }: RevealProps) => {
         }}
         initial="hidden"
         whileInView={{ left: "100%" }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5, ease: "easeIn" }}
       ></motion.div>
     </div>

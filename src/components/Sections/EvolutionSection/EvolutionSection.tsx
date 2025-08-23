@@ -53,7 +53,7 @@ export default function EvolutionSection() {
             <motion.img
               src={mario}
               initial={{ x: 300, opacity: 0, rotateY: 180 }}
-              whileInView={{
+              animate={{
                 x: 200,
                 opacity: 100,
                 rotateY: 180,

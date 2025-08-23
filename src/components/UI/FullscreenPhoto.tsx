@@ -44,7 +44,7 @@ export const FullscreenPhoto = ({ image, alt, className }: Props) => {
               layoutId={alt}
               src={image}
               alt={alt}
-              className="max-w-full max-h-[90vh] object-fill rounded-4xl"
+              className="max-w-[90vw] max-h-[90vh] object-fill rounded-4xl"
             />
           </motion.div>
         )}

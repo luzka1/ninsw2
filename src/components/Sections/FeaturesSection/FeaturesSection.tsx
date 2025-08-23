@@ -7,7 +7,7 @@ import { FullscreenPhoto } from "@/components/UI/FullscreenPhoto";
 
 const photos: { url: string; alt: string }[] = [
   {
-    url: "/assets/lifestyle-tableTop.avif",
+    url: "/assets/GameChat_yellowShirt_rounded.avif",
     alt: "nintendo switch apoiado em uma mesa e os joy-con sendo segurados por um homem",
   },
   {
@@ -30,7 +30,7 @@ export default function FeaturesSection() {
       <div className="flex flex-col justify-center items-center gap-14">
         <div>
           <Reveal color="none">
-            <h1 className="title text-white">Um console maior e melhor!</h1>
+            <h1 className="title text-white">Um console maior e mais potente!</h1>
           </Reveal>
         </div>
 

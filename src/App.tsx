@@ -4,6 +4,7 @@ import FeaturesSection from "@/components/Sections/FeaturesSection/FeaturesSecti
 import BannerSection from "@/components/Sections/BannerSection/BannerSection";
 import GameChatSection from "@/components/Sections/GameChatSection/GameChatSection";
 import WayToPlaySection from "@/components/Sections/WayToPlaySection/WayToPlaySection";
+import GameShareSection from "./components/Sections/GameShareSection/GameShareSection";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <GameChatSection />
 
       <WayToPlaySection />
+
+      <GameShareSection />
     </div>
   );
 }

@@ -10,7 +10,7 @@ type ComponentTypes = {
 };
 
 export default function WayToPlaySection() {
-  const itemsTest: ComponentTypes[] = [
+  const items: ComponentTypes[] = [
     {
       img: "/assets/NintendoSwitch2_Lifestyle_cut_01_0313.jpg",
       alt: "Nintendo Switch 2 Docked Mode",
@@ -20,7 +20,7 @@ export default function WayToPlaySection() {
     {
       img: "/assets/lifestyle-tableTop.avif",
       alt: "Nintendo Switch 2 SemiPortable Mode",
-      title: "Modo Semi Portátil",
+      title: "Modo Semiportátil",
       text: "Com o suporte traseiro ajustável, o console pode ser apoiado sobre uma mesa enquanto os Joy-Con ficam livres para jogar. Ótimo para dividir a tela com amigos em viagens, cafés ou encontros. A tela de 7,9 com HDR garante ótima visibilidade mesmo longe da TV. É perfeito para jogar em movimento, com qualidade e conforto.",
     },
     {
@@ -48,7 +48,7 @@ export default function WayToPlaySection() {
           </div>
 
           <div className="flex justify-between">
-            {itemsTest.map((item, index) => {
+            {items.map((item, index) => {
               return <WaysToPlayComponent key={index} item={item} />;
             })}
           </div>

@@ -15,9 +15,9 @@ interface Props {
 
 export default function WaysToPlayComponent({ item }: Props) {
   return (
-    <motion.div className="w-lg h-[630px] bg-white rounded-4xl shadow-xl flex flex-col">
+    <motion.div className="w-lg min-h-[630px] h-fit bg-white rounded-4xl shadow-xl flex flex-col">
       <div className="w-full h-1/2 p-4">
-        <FullscreenPhoto image={item.img} alt={item.alt} />
+        <FullscreenPhoto className="w-full h-1/2 rounded-4xl object-cover hover:cursor-zoom-in hover:border-8 hover:border-red-500 transition-all" image={item.img} alt={item.alt} />
       </div>
 
       <div className="w-full h-1/2 px-12 pb-8">
