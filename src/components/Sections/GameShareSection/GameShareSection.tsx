@@ -1,8 +1,8 @@
 import Container from "@/components/UI/Container";
 import { motion } from "motion/react";
 
-import switch2 from "/assets/ninsw2-pic-2.png";
-import switchOled from "/assets/oled.webp";
+import switch2 from "/assets/sw2jamboree.png";
+import switchOled from "/assets/oled.png";
 import switchLite from "/assets/lite.png";
 import { Wifi } from "lucide-react";
 import { Reveal } from "@/components/UI/Reveal";
@@ -29,7 +29,19 @@ export default function GameShareSection() {
           <div className=" flex flex-col justify-center items-center">
             <div className="flex justify-center items-center">
               <div className="w-1/2">
-                <img
+                <motion.img
+                  initial={{ opacity: 0, y: 75 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.2,
+                    stiffness: 100,
+                    ease: "easeInOut",
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  viewport={{ once: true, amount: 0.3 }}
                   className="w-full h-full object-contain drop-shadow-xl"
                   src={switch2}
                   alt="nintendo switch 2"
@@ -43,23 +55,59 @@ export default function GameShareSection() {
 
             <div className="flex gap-12">
               <div className="flex-1/3">
-                <img
+                <motion.img
+                  initial={{ opacity: 0, y: 75 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.5,
+                    stiffness: 100,
+                    ease: "easeInOut",
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  viewport={{ once: true, amount: 0.3 }}
                   src={switch2}
                   className="w-full object-contain drop-shadow-xl"
                   alt="nintendo switch 2"
                 />
               </div>
               <div className="flex-1/3">
-                <img
+                <motion.img
+                  initial={{ opacity: 0, y: 75 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.7,
+                    stiffness: 100,
+                    ease: "easeInOut",
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  viewport={{ once: true, amount: 0.3 }}
                   src={switchOled}
                   className="w-full object-contain drop-shadow-xl"
                   alt="nintendo switch oled"
                 />
               </div>
-              <div className="flex-1/3">
-                <img
+              <div className="flex-1/3 flex items-center justify-center">
+                <motion.img
+                  initial={{ opacity: 0, y: 75 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.1,
+                    stiffness: 100,
+                    ease: "easeInOut",
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  viewport={{ once: true, amount: 0.3 }}
                   src={switchLite}
-                  className="w-full object-contain drop-shadow-xl"
+                  className="w-[80%] object-contain drop-shadow-xl"
                   alt="nintendo switch lite"
                 />
               </div>
