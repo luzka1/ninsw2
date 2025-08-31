@@ -3,7 +3,7 @@ import Container from "@/components/UI/Container";
 import NintendoLogo from "@/components/UI/NintendoLogo";
 import { Button } from "@/components/UI/Button";
 
-const Header = () => {
+export default function Header() {
   return (
     <header className="py-8 absolute w-full z-10">
       <Container>
@@ -20,6 +20,4 @@ const Header = () => {
       </Container>
     </header>
   );
-};
-
-export default Header;
+}

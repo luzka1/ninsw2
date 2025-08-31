@@ -32,14 +32,16 @@ export default function WayToPlaySection() {
   ];
 
   return (
-    <section className="py-24 h-dvh">
+    <section className="py-12 2xl:py-24 min-h-dvh">
       <Container className="">
         <div className="flex flex-col gap-12">
           <div>
             <Reveal color="none">
-              <h1 className="title">Escolha seu modo de jogar</h1>
+              <h1 className="title text-3xl 2xl:text-5xl">
+                Escolha seu modo de jogar
+              </h1>
 
-              <p className="paragraph">
+              <p className="paragraph text-base">
                 Assim como os consoles Nintendo Switch anteriores, você pode
                 aproveitar seus jogos a qualquer hora e em qualquer lugar no
                 modo TV, no modo semiportátil ou no modo portátil.
@@ -47,7 +49,7 @@ export default function WayToPlaySection() {
             </Reveal>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex justify-between gap-8">
             {items.map((item, index) => {
               return <WaysToPlayComponent key={index} item={item} />;
             })}

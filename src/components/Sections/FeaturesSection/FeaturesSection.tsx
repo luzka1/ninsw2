@@ -26,11 +26,13 @@ const photos: { url: string; alt: string }[] = [
 
 export default function FeaturesSection() {
   return (
-    <section className="w-full bg-radial flex flex-col from-slate-950 from-40% to-zinc-950 gap-64 py-24">
-      <div className="flex flex-col justify-center items-center gap-14">
+    <section className="w-full bg-radial flex flex-col from-slate-950 from-40% to-zinc-950 gap-32 2xl:gap-64 py-12 2xl:py-24">
+      <div className="flex flex-col justify-center items-center xl:gap-14">
         <div>
           <Reveal color="none">
-            <h1 className="title text-white">Um console maior e mais potente!</h1>
+            <h1 className="title text-white text-3xl 2xl:text-5xl">
+              Um console maior e mais potente!
+            </h1>
           </Reveal>
         </div>
 
@@ -45,7 +47,7 @@ export default function FeaturesSection() {
             delay: 0.2,
           }}
         >
-          <div className="relative w-full h-[500px]">
+          <div className="relative w-full h-[300px] 2xl:h-[500px]">
             <img
               src={nsw2}
               className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
@@ -65,7 +67,7 @@ export default function FeaturesSection() {
 
         <div className="w-2/3">
           <Reveal color="none">
-            <p className="paragraph text-white">
+            <p className="paragraph text-white text-base">
               Aproximadamente 4,5 pol (11,43 cm) de altura, 10,7 pol (27,2 cm)
               de largura e 0,55 pol (1,4 cm) de espessura (com os controles
               Joy-Con™ 2 encaixados). *A espessura máxima das pontas das regiões
@@ -75,15 +77,17 @@ export default function FeaturesSection() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center h-dvh gap-14">
+      <div className="flex flex-col justify-center items-center h-dvh gap-10 2xl:gap-14">
         <div>
           <Reveal color="none">
-            <h1 className="title text-white">E com amigos é sempre melhor!</h1>
+            <h1 className="title text-white text-3xl 2xl:text-5xl">
+              E com amigos é sempre melhor!
+            </h1>
           </Reveal>
         </div>
 
         <motion.div
-          className="w-2/3 h-[600px] relative grid grid-rows-2 grid-cols-[1fr_2fr] gap-4"
+          className="w-2/3 h-[350px] 2xl:h-[600px] relative grid grid-rows-2 grid-cols-[1fr_2fr] gap-4"
           initial={{ x: "100%", opacity: 0 }}
           animate={{ x: "0%", opacity: 1 }}
           transition={{
@@ -102,7 +106,7 @@ export default function FeaturesSection() {
 
         <div className="w-2/3">
           <Reveal color="none">
-            <p className="paragraph text-white">
+            <p className="paragraph text-white text-base">
               Comece um bate-papo com seus amigos a qualquer hora com o botão C!
               Compartilhe a tela do seu jogo enquanto conversa para ver o que
               está rolando. Para um toque ainda mais especial, veja os rostos

@@ -5,7 +5,7 @@ import chat from "/assets/gamechat.avif";
 
 export default function GameChatSection() {
   return (
-    <section className="py-24 h-dvh flex">
+    <section className="py-12 2xl:py-24 min-h-dvh flex">
       <div className="w-1/2 h-full">
         <div className="h-full w-full flex justify-center items-center">
           <motion.img
@@ -30,11 +30,13 @@ export default function GameChatSection() {
           <div className="flex flex-col gap-2">
             <div>
               <Reveal color="red">
-                <h1 className="title">Conheça o GameChat!</h1>
+                <h1 className="title text-3xl 2xl:text-5xl">
+                  Conheça o GameChat!
+                </h1>
               </Reveal>
 
               <Reveal color="red">
-                <p className="subtitle">
+                <p className="subtitle text-xl 2xl:text-2xl">
                   Agora você pode conversar por voz, compartilhar sua tela e se
                   conectar por vídeo enquanto joga.
                 </p>
@@ -42,7 +44,7 @@ export default function GameChatSection() {
             </div>
 
             <Reveal color="red">
-              <p className="paragraph">
+              <p className="paragraph text-base">
                 Seus amigos e familiares nunca estão longe com o GameChat. Basta
                 apertar o botão C do Joy-Con 2 direito e iniciar um bate-papo
                 online com seus amigos no Nintendo Switch 2 quando quiser.
@@ -52,7 +54,7 @@ export default function GameChatSection() {
             <br />
 
             <Reveal color="red">
-              <p className="paragraph">
+              <p className="paragraph text-base">
                 O console Nintendo Switch 2 tem um microfone embutido que pode
                 captar sua voz, mesmo que você esteja longe. Sua voz será
                 transmitida em alto e bom som para seus amigos.
@@ -62,7 +64,7 @@ export default function GameChatSection() {
             <br />
 
             <Reveal color="red">
-              <p className="paragraph">
+              <p className="paragraph text-base">
                 Compartilhe sua tela em tempo real, mesmo que estejam jogando
                 jogos diferentes. Forme uma equipe no mesmo jogo ou assista aos
                 seus amigos jogando outros jogos. O objetivo é se divertir.
