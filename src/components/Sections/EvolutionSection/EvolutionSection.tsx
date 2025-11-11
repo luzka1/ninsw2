@@ -11,13 +11,13 @@ export default function EvolutionSection() {
         <div className="flex">
           <div className="flex-1/2 flex flex-col items-center justify-center gap-12">
             <Reveal color="red">
-              <h1 className="title">
+              <h1 className="title text-3xl">
                 A próxima evolução do console Nintendo Switch chegou!
               </h1>
             </Reveal>
             <div>
               <Reveal color="red">
-                <p className="paragraph">
+                <p className="paragraph text-base">
                   Dê vida aos jogos em uma tela maior com resolução de 1080
                   pixels ou conecte uma TV e jogue em resolução de até 4K. O
                   suporte para HDR e taxas de quadros de até 120 qps permitem
@@ -29,7 +29,7 @@ export default function EvolutionSection() {
               </Reveal>
 
               <Reveal color="red">
-                <p className="paragraph">
+                <p className="paragraph text-base">
                   Encaixe os novos controles Joy-Con™ 2 com os conectores
                   magnéticos. Cada controle pode ser usado como um mouse em
                   jogos compatíveis.
@@ -39,7 +39,7 @@ export default function EvolutionSection() {
               </Reveal>
 
               <Reveal color="red">
-                <p className="paragraph">
+                <p className="paragraph text-base">
                   Vivencie novas experiências com jogos exclusivos, como Mario
                   Kart™ World, apenas no console Nintendo Switch 2. E tem mais!
                   Você ainda pode curtir jogos compatíveis da sua biblioteca do
@@ -58,6 +58,7 @@ export default function EvolutionSection() {
                 opacity: 100,
                 rotateY: 180,
               }}
+              className="w-md 2xl:w-full"
               transition={{ type: "spring", delay: 0.5, stiffness: 50 }}
               alt="Mario com design do novo jogo (Mario Kart World)"
             />

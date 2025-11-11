@@ -9,14 +9,16 @@ import { Reveal } from "@/components/UI/Reveal";
 
 export default function GameShareSection() {
   return (
-    <section className="py-24 h-dvh flex">
+    <section className="py-12 2xl:py-24 min-h-dvh flex">
       <Container>
         <div className="w-full flex flex-col justify-center items-center gap-12">
           <div>
             <Reveal color="none">
-              <h1 className="title">Compartilhe seus jogos localmente</h1>
+              <h1 className="title text-3xl 2xl:text-5xl">
+                Compartilhe seus jogos localmente
+              </h1>
 
-              <p className="paragraph">
+              <p className="paragraph text-base">
                 GameShare local permite multijogador com apenas uma cópia do
                 jogo, transmitindo o jogo de um Switch 2 para outros consoles
                 nas proximidades (Switch 2 ou Switch). O convidado apenas
@@ -56,7 +58,7 @@ export default function GameShareSection() {
             <div className="flex gap-12">
               <div className="flex-1/3">
                 <motion.img
-                  initial={{ opacity: 0, y: 75 }}
+                  initial={{ opacity: 0, y: 25 }}
                   transition={{
                     duration: 0.5,
                     delay: 0.5,
@@ -75,7 +77,7 @@ export default function GameShareSection() {
               </div>
               <div className="flex-1/3">
                 <motion.img
-                  initial={{ opacity: 0, y: 75 }}
+                  initial={{ opacity: 0, y: 25 }}
                   transition={{
                     duration: 0.5,
                     delay: 0.7,
@@ -94,7 +96,7 @@ export default function GameShareSection() {
               </div>
               <div className="flex-1/3 flex items-center justify-center">
                 <motion.img
-                  initial={{ opacity: 0, y: 75 }}
+                  initial={{ opacity: 0, y: 25 }}
                   transition={{
                     duration: 0.5,
                     delay: 0.1,
