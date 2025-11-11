@@ -5,6 +5,7 @@ import BannerSection from "@/components/Sections/BannerSection/BannerSection";
 import GameChatSection from "@/components/Sections/GameChatSection/GameChatSection";
 import WayToPlaySection from "@/components/Sections/WayToPlaySection/WayToPlaySection";
 import GameShareSection from "./components/Sections/GameShareSection/GameShareSection";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       <WayToPlaySection />
 
       <GameShareSection />
+
+      <Footer />
     </div>
   );
 }

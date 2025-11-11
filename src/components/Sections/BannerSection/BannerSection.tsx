@@ -6,7 +6,7 @@ import logo from "/assets/logo2.png";
 
 export default function BannerSection() {
   return (
-    <motion.section className="relative w-full h-[90vh] overflow-hidden bg-bgRed">
+    <motion.section className="relative w-full h-[100vh] lg:h-[90vh] overflow-hidden bg-bgRed">
       <motion.div
         initial={{ height: "100%" }}
         animate={{ height: "0%" }}
@@ -14,7 +14,7 @@ export default function BannerSection() {
         className="absolute bottom-0 left-0 w-full bg-[#efefef]"
       />
 
-      <motion.div className="flex justify-center items-center h-full">
+      <motion.div className="flex flex-col md:flex-row justify-center items-center h-full">
         <div className="flex-2/3">
           <motion.img
             initial={{ x: "-100%" }}

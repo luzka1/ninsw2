@@ -21,7 +21,7 @@ export default function GameShareSection() {
                 jogo, transmitindo o jogo de um Switch 2 para outros consoles
                 nas proximidades (Switch 2 ou Switch). O convidado apenas
                 participa enquanto a sessão estiver ativa. Simples, prático e
-                rápido — nada de download!
+                rápido e o melhor: nada de download!
               </p>
             </Reveal>
           </div>
