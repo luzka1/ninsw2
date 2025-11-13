@@ -11,18 +11,16 @@
   .title {
     font-weight: bold;
     color: var(--color-title);
-    font-size: 3rem;
     line-height: normal;
+    font-size: 3rem;
   }
 
   .paragraph {
     color: var(--color-title);
-    font-size: 18px;
   }
 
   .subtitle {
     color: var(--color-title);
-    font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
   }

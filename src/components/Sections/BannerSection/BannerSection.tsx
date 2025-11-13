@@ -6,7 +6,7 @@ import logo from "/assets/logo2.png";
 
 export default function BannerSection() {
   return (
-    <motion.section className="relative w-full h-[100vh] lg:h-[90vh] overflow-hidden bg-bgRed">
+    <motion.section className="relative w-full h-[90vh] overflow-hidden bg-bgRed">
       <motion.div
         initial={{ height: "100%" }}
         animate={{ height: "0%" }}
@@ -14,8 +14,8 @@ export default function BannerSection() {
         className="absolute bottom-0 left-0 w-full bg-[#efefef]"
       />
 
-      <motion.div className="flex flex-col md:flex-row justify-center items-center h-full">
-        <div className="flex-2/3">
+      <motion.div className="flex flex-col-reverse md:flex-row justify-center items-center h-full">
+        <div className="lg:flex-2/3">
           <motion.img
             initial={{ x: "-100%" }}
             animate={{ x: "-25%" }}
@@ -30,20 +30,20 @@ export default function BannerSection() {
           />
         </div>
         <motion.div
-          initial={{ x: "-30%", y: "-10%", opacity: "0%" }}
-          animate={{ x: "-30%", y: "0%", opacity: "100%" }}
+          initial={{ y: "-10%", opacity: "0%" }}
+          animate={{ y: "0%", opacity: "100%" }}
           transition={{
             type: "spring",
             duration: 1.5,
             delay: 1,
           }}
-          className="flex-1/3"
+          className="flex flex-col justify-center items-center w-full"
         >
           <img className="h-1/2" src={logo} />
 
           <div className="w-full flex flex-col gap-2 items-center justify-center">
             <Button>Saiba Mais</Button>
-            <span className="text-md text-white">
+            <span className="text-white">
               Aumente a diversão dos seus dias!
             </span>
           </div>

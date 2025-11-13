@@ -29,7 +29,7 @@ export default function WaysToPlayComponent({ item }: Props) {
           <h2 className="subtitle text-lg 2xl:text-2xl">{item.title}</h2>
         </Reveal>
         <Reveal color="red">
-          <p className="paragraph text-base">{item.text}</p>
+          <p className="paragraph">{item.text}</p>
         </Reveal>
       </div>
     </motion.div>

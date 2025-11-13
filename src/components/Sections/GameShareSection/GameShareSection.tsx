@@ -14,11 +14,11 @@ export default function GameShareSection() {
         <div className="w-full flex flex-col justify-center items-center gap-12">
           <div>
             <Reveal color="none">
-              <h1 className="title text-3xl 2xl:text-5xl">
+              <h1 className="title">
                 Compartilhe seus jogos localmente
               </h1>
 
-              <p className="paragraph text-base">
+              <p className="paragraph">
                 GameShare local permite multijogador com apenas uma cópia do
                 jogo, transmitindo o jogo de um Switch 2 para outros consoles
                 nas proximidades (Switch 2 ou Switch). O convidado apenas

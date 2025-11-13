@@ -3,7 +3,7 @@ import Container from "../UI/Container";
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-950 py-6 2xl:py-12 text-white text-sm">
+    <footer className="bg-zinc-950 py-6 2xl:py-3 text-white text-sm">
       <Container className="w-full">
         <ul className="w-full flex items-center gap-12">
           <li>Desenvolvido por: lucasgsantos1727@gmail.com</li>

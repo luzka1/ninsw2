@@ -30,7 +30,7 @@ export default function FeaturesSection() {
       <div className="flex flex-col justify-center items-center xl:gap-14">
         <div>
           <Reveal color="none">
-            <h1 className="title text-white text-3xl 2xl:text-5xl">
+            <h1 className="title text-white">
               Um console maior e mais potente!
             </h1>
           </Reveal>
@@ -67,7 +67,7 @@ export default function FeaturesSection() {
 
         <div className="w-2/3">
           <Reveal color="none">
-            <p className="paragraph text-white text-base">
+            <p className="paragraph text-white">
               Aproximadamente 4,5 pol (11,43 cm) de altura, 10,7 pol (27,2 cm)
               de largura e 0,55 pol (1,4 cm) de espessura (com os controles
               Joy-Con™ 2 encaixados). *A espessura máxima das pontas das regiões
@@ -80,7 +80,7 @@ export default function FeaturesSection() {
       <div className="flex flex-col justify-center items-center h-dvh gap-10 2xl:gap-14">
         <div>
           <Reveal color="none">
-            <h1 className="title text-white text-3xl 2xl:text-5xl">
+            <h1 className="title text-white">
               E com amigos é sempre melhor!
             </h1>
           </Reveal>
@@ -106,7 +106,7 @@ export default function FeaturesSection() {
 
         <div className="w-2/3">
           <Reveal color="none">
-            <p className="paragraph text-white text-base">
+            <p className="paragraph text-white">
               Comece um bate-papo com seus amigos a qualquer hora com o botão C!
               Compartilhe a tela do seu jogo enquanto conversa para ver o que
               está rolando. Para um toque ainda mais especial, veja os rostos
