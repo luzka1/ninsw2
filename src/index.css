@@ -12,7 +12,7 @@
     font-weight: bold;
     color: var(--color-title);
     line-height: normal;
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(1.5rem, 7vw, 3rem);
   }
 
   .paragraph {

@@ -26,11 +26,11 @@ const photos: { url: string; alt: string }[] = [
 
 export default function FeaturesSection() {
   return (
-    <section className="w-full bg-radial flex flex-col from-slate-950 from-40% to-zinc-950 gap-32 2xl:gap-64 py-12 2xl:py-24">
+    <section className="w-full bg-radial flex flex-col from-slate-950 from-40% to-zinc-950 2xl:gap-64 pt-12 2xl:py-24">
       <div className="flex flex-col justify-center items-center xl:gap-14">
-        <div>
+        <div className="w-[90vw]">
           <Reveal color="none">
-            <h1 className="title text-white">
+            <h1 className="title text-center text-white">
               Um console maior e mais potente!
             </h1>
           </Reveal>
@@ -65,7 +65,7 @@ export default function FeaturesSection() {
           </div>
         </motion.div>
 
-        <div className="w-2/3">
+        <div className="w-[90vw]">
           <Reveal color="none">
             <p className="paragraph text-white">
               Aproximadamente 4,5 pol (11,43 cm) de altura, 10,7 pol (27,2 cm)
@@ -78,16 +78,16 @@ export default function FeaturesSection() {
       </div>
 
       <div className="flex flex-col justify-center items-center h-dvh gap-10 2xl:gap-14">
-        <div>
+        <div className="w-[90vw]">
           <Reveal color="none">
-            <h1 className="title text-white">
+            <h1 className="title text-white text-center">
               E com amigos é sempre melhor!
             </h1>
           </Reveal>
         </div>
 
         <motion.div
-          className="w-2/3 h-[350px] 2xl:h-[600px] relative grid grid-rows-2 grid-cols-[1fr_2fr] gap-4"
+          className="w-[90vw] lg:w-2/3 h-[350px] 2xl:h-[600px] relative grid grid-rows-2 grid-cols-[1fr_2fr] gap-4"
           initial={{ x: "100%", opacity: 0 }}
           animate={{ x: "0%", opacity: 1 }}
           transition={{
@@ -104,7 +104,7 @@ export default function FeaturesSection() {
           ))}
         </motion.div>
 
-        <div className="w-2/3">
+        <div className="w-[90vw] lg:w-2/3">
           <Reveal color="none">
             <p className="paragraph text-white">
               Comece um bate-papo com seus amigos a qualquer hora com o botão C!
