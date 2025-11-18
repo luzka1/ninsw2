@@ -9,7 +9,7 @@ import { Reveal } from "@/components/UI/Reveal";
 
 export default function GameShareSection() {
   return (
-    <section className="py-12 2xl:py-24 min-h-dvh flex">
+    <section className="py-12 lg:min-h-dvh flex">
       <Container>
         <div className="w-full flex flex-col justify-center items-center gap-12">
           <div>

@@ -26,9 +26,9 @@ const photos: { url: string; alt: string }[] = [
 
 export default function FeaturesSection() {
   return (
-    <section className="w-full bg-radial flex flex-col from-slate-950 from-40% to-zinc-950 2xl:gap-64 pt-12 2xl:py-24">
-      <div className="flex flex-col justify-center items-center xl:gap-14">
-        <div className="w-[90vw]">
+    <section className="w-full bg-radial flex flex-col from-slate-950 from-40% to-zinc-950 gap-32 py-12">
+      <div className="flex flex-col justify-center items-center gap-12">
+        <div className="w-[90vw] lg:w-auto">
           <Reveal color="none">
             <h1 className="title text-center text-white">
               Um console maior e mais potente!
@@ -37,7 +37,7 @@ export default function FeaturesSection() {
         </div>
 
         <motion.div
-          className="w-2/3 h-fit"
+          className="w-full lg:w-2/3 h-fit"
           initial={{ x: "100%", opacity: 0 }}
           whileInView={{ x: "0%", opacity: 1 }}
           transition={{
@@ -47,10 +47,10 @@ export default function FeaturesSection() {
             delay: 0.2,
           }}
         >
-          <div className="relative w-full h-[300px] 2xl:h-[500px]">
+          <div className="relative w-full h-[300px] lg:h-[500px]">
             <img
               src={nsw2}
-              className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+              className="absolute w-full top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
               alt="imagem estatica do nintendo switch 2"
             />
             <video
@@ -78,9 +78,9 @@ export default function FeaturesSection() {
       </div>
 
       <div className="flex flex-col justify-center items-center h-dvh gap-10 2xl:gap-14">
-        <div className="w-[90vw]">
+        <div className="w-[90vw] lg:w-auto">
           <Reveal color="none">
-            <h1 className="title text-white text-center">
+            <h1 className="title text-white text-center w-full">
               E com amigos é sempre melhor!
             </h1>
           </Reveal>

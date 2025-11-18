@@ -9,7 +9,7 @@ import Footer from "@/components/Footer/Footer";
 
 function App() {
   return (
-    <div className="flex flex-col relative">
+    <div className="flex flex-col relative items-center lg:items-start">
       <Header />
 
       <BannerSection />

@@ -1,8 +1,8 @@
-import WaysToPlayComponent from "@/components/Sections/WayToPlaySection/WaysToPlayComponent";
+import { Card } from "@/components/Sections/WayToPlaySection/WaysToPlayComponent";
 import Container from "@/components/UI/Container";
 import { Reveal } from "@/components/UI/Reveal";
 
-type ComponentTypes = {
+type CardModel = {
   img: string;
   alt: string;
   title: string;
@@ -10,7 +10,7 @@ type ComponentTypes = {
 };
 
 export default function WayToPlaySection() {
-  const items: ComponentTypes[] = [
+  const items: CardModel[] = [
     {
       img: "/assets/NintendoSwitch2_Lifestyle_cut_01_0313.jpg",
       alt: "Nintendo Switch 2 Docked Mode",
@@ -32,14 +32,12 @@ export default function WayToPlaySection() {
   ];
 
   return (
-    <section className="py-12 2xl:py-24 min-h-dvh">
+    <section className="py-12 min-h-dvh">
       <Container className="">
         <div className="flex flex-col gap-12">
           <div>
             <Reveal color="none">
-              <h1 className="title">
-                Escolha seu modo de jogar
-              </h1>
+              <h1 className="title">Escolha seu modo de jogar</h1>
 
               <p className="paragraph">
                 Assim como os consoles Nintendo Switch anteriores, você pode
@@ -49,9 +47,9 @@ export default function WayToPlaySection() {
             </Reveal>
           </div>
 
-          <div className="flex justify-between gap-8">
+          <div className="flex flex-col lg:flex-row justify-between gap-8">
             {items.map((item, index) => {
-              return <WaysToPlayComponent key={index} item={item} />;
+              return <Card key={index} item={item} />;
             })}
           </div>
         </div>

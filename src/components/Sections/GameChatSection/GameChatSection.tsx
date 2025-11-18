@@ -5,8 +5,8 @@ import chat from "/assets/gamechat.avif";
 
 export default function GameChatSection() {
   return (
-    <section className="py-12 2xl:py-24 flex h-dvh">
-      <div className="w-1/2 h-full">
+    <section className="w-[90vw] py-12 flex flex-col lg:flex-row min-h-dvh">
+      <div className="w-full lg:w-1/2 h-full">
         <div className="h-full w-full flex justify-center items-center">
           <motion.img
             initial={{ opacity: 0, x: -500 }}
@@ -25,8 +25,8 @@ export default function GameChatSection() {
         </div>
       </div>
 
-      <div className="w-1/2 h-full md:pr-16 lg:pr-32">
-        <div className="h-full w-full flex flex-col gap-12">
+      <div className="lg:w-1/2 h-full lg:pr-32">
+        <div className="h-full w-full flex flex-col justify-center items-center gap-12">
           <div className="flex flex-col gap-2">
             <div>
               <Reveal color="red">
@@ -72,7 +72,7 @@ export default function GameChatSection() {
             </Reveal>
           </div>
 
-          <div className="">
+          <div className="flex items-center w-full justify-center">
             <motion.img
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 100, x: 0 }}

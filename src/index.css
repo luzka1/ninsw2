@@ -13,11 +13,19 @@
     color: var(--color-title);
     line-height: normal;
     font-size: clamp(1.5rem, 7vw, 3rem);
+    margin-bottom: 0.5rem;
   }
 
   .paragraph {
     color: var(--color-title);
+    font-size: 1.2rem;
   }
+
+    @media screen and (max-width: 1024px) {
+    .paragraph{
+      font-size: medium;
+    }
+}
 
   .subtitle {
     color: var(--color-title);
@@ -38,5 +46,5 @@ body {
   box-sizing: border-box;
   background-color: #efefef;
   overflow-x: hidden;
-  font-family: "Noto Sans"sans-serif;
+  font-family: "Noto Sans" sans-serif;
 }

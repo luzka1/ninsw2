@@ -8,6 +8,8 @@ import { useWindowSize } from "@/lib/getWindowWidth";
 export default function EvolutionSection() {
   const { width } = useWindowSize();
 
+  console.log(width)
+
   function resizeAnimation() {
     if (width < 1024) {
       return {
@@ -24,12 +26,12 @@ export default function EvolutionSection() {
   }
 
   return (
-    <motion.section className="py-12 relative h-dvh">
+    <motion.section className="py-12 relative">
       <Container>
-        <div className="flex flex-col h-full">
-          <div className="flex flex-col items-center justify-center gap-12">
+        <div className="flex flex-col lg:flex-row h-full">
+          <div className="flex flex-col items-center lg:items-start justify-center gap-12 lg:flex-1/2">
             <Reveal color="red">
-              <h1 className="title text-2xl">
+              <h1 className="title">
                 A próxima evolução do console Nintendo Switch chegou!
               </h1>
             </Reveal>
@@ -67,13 +69,13 @@ export default function EvolutionSection() {
             </div>
           </div>
 
-          <div className="flex justify-center items-center w-full h-full">
+          <div className="flex justify-center items-center w-full h-full lg:flex-1/2">
             <motion.img
               src={mario}
               initial={{ x: 300, opacity: 0, rotateY: 180 }}
               animate={resizeAnimation()}
-              className="w-2/3"
               transition={{ type: "spring", delay: 0.5, stiffness: 50 }}
+              className="w-2/3"
               alt="Mario com design do novo jogo (Mario Kart World)"
             />
           </div>

@@ -15,17 +15,17 @@ export default function BannerSection() {
       />
 
       <motion.div className="flex flex-col-reverse md:flex-row justify-center items-center h-full">
-        <div className="lg:flex-2/3">
+        <div className="flex-1/3 lg:flex-1/2">
           <motion.img
             initial={{ x: "-100%" }}
-            animate={{ x: "-25%" }}
+            animate={{ x: "0%" }}
             transition={{
               type: "spring",
               ease: "easeOut",
-              duration: 2,
+              duration: 2.5,
               delay: 0.5,
             }}
-            className="w-[200%]"
+            className=""
             src={nsw2}
           />
         </div>
@@ -37,9 +37,9 @@ export default function BannerSection() {
             duration: 1.5,
             delay: 1,
           }}
-          className="flex flex-col justify-center items-center w-full"
+          className="flex flex-col justify-center items-center w-full flex-2/3 lg:flex-1/2"
         >
-          <img className="h-1/2" src={logo} />
+          <img className="w-[15rem] lg:w-[35rem]" src={logo} />
 
           <div className="w-full flex flex-col gap-2 items-center justify-center">
             <Button>Saiba Mais</Button>
