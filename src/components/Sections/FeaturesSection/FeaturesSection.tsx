@@ -38,13 +38,16 @@ export default function FeaturesSection() {
 
         <motion.div
           className="w-full lg:w-2/3 h-fit"
-          initial={{ x: "100%", opacity: 0 }}
+          initial={{ x: "100px", opacity: 0 }}
           whileInView={{ x: "0%", opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{
             type: "spring",
             ease: "easeOut",
             duration: 2,
             delay: 0.2,
+            x: "0%",
+            opacity: 1,
           }}
         >
           <div className="relative w-full h-[300px] lg:h-[500px]">
