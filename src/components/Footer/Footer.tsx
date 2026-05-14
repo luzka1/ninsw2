@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-zinc-950 py-6 2xl:py-8 text-white text-sm w-full">
       <Container className="w-full">
-        <ul className="w-full flex items-center gap-4 2xl:gap-12 flex-col text-center">
+        <ul className="w-full flex items-center gap-4 2xl:gap-12 2xl:flex-row 2xl:text-left flex-col text-center">
           <li>Desenvolvido por: lucasgsantos1727@gmail.com</li>
           <li>
             © Nintendo. Todas as imagens utilizadas são do{" "}
