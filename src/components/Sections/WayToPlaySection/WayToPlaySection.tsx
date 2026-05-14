@@ -32,7 +32,7 @@ export default function WayToPlaySection() {
   ];
 
   return (
-    <section className="py-12 min-h-dvh">
+    <section className="py-12 max-w-screen min-h-dvh">
       <Container className="">
         <div className="flex flex-col gap-12">
           <div>
@@ -49,7 +49,7 @@ export default function WayToPlaySection() {
 
           <div className="flex flex-col lg:flex-row justify-between gap-8">
             {items.map((item, index) => {
-              return <Card key={index} item={item} />;
+              return <Card key={index} item={item} mode="windowed" />;
             })}
           </div>
         </div>

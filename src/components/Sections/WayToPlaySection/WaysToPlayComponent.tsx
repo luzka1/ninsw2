@@ -12,9 +12,10 @@ type ComponentTypes = {
 
 interface Props {
   item: ComponentTypes;
+  mode?: "fullscren" | "windowed";
 }
 
-export function Card({ item }: Props) {
+export function Card({ item, mode = "fullscren" }: Props) {
   const { width } = useWindowSize();
 
   function resizeAnimation() {
@@ -48,14 +49,24 @@ export function Card({ item }: Props) {
       initial={initialAnimation()}
       whileInView={resizeAnimation()}
       transition={{ type: "spring", delay: 0.5, stiffness: 50 }}
-      className="max-w-[90vw] lg:w-lg min-h-auto 2xl:min-h-[630px] h-fit bg-white rounded-4xl shadow-xl flex flex-col"
+      className="max-w-[90vw] lg:w-lg 2xl:min-h-[630px] h-fit bg-white rounded-4xl shadow-xl flex flex-col"
     >
       <div className="w-full h-1/2 p-4">
-        <FullscreenPhoto
-          className="w-full h-1/2 rounded-4xl object-cover hover:cursor-zoom-in hover:border-8 hover:border-red-500 transition-all"
-          image={item.img}
-          alt={item.alt}
-        />
+        {mode === "fullscren" && (
+          <FullscreenPhoto
+            className="w-full h-1/2 rounded-4xl object-cover hover:cursor-zoom-in hover:border-8 hover:border-red-500 transition-all"
+            image={item.img}
+            alt={item.alt}
+          />
+        )}
+
+        {mode === "windowed" && (
+          <img
+            src={item.img}
+            alt={item.alt}
+            className={"w-full h-1/2 rounded-4xl object-cover"}
+          />
+        )}
       </div>
 
       <div className="w-full h-1/2 px-8 2xl:px-12 pb-8">

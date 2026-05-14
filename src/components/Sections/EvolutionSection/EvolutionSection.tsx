@@ -8,7 +8,7 @@ import { useWindowSize } from "@/lib/getWindowWidth";
 export default function EvolutionSection() {
   const { width } = useWindowSize();
 
-  console.log(width)
+  console.log(width);
 
   function resizeAnimation() {
     if (width < 1024) {
@@ -75,7 +75,7 @@ export default function EvolutionSection() {
               initial={{ x: 300, opacity: 0, rotateY: 180 }}
               animate={resizeAnimation()}
               transition={{ type: "spring", delay: 0.5, stiffness: 50 }}
-              className="w-2/3"
+              className="w-[500px]"
               alt="Mario com design do novo jogo (Mario Kart World)"
             />
           </div>
